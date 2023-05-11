@@ -1,0 +1,180 @@
+body{      
+    margin-top: 20vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.logoMusic{
+    display:flex;
+    justify-content: center;
+    position: absolute;
+    align-items: center;
+    margin-top: -150px;
+    z-index: 9999999;
+}span{
+    margin: 10px;
+}
+.w1{
+    width: 20px;
+    height: 10px;
+    animation: mu 1s linear infinite;
+    background: rgb(122,7, 250);
+    border-radius:50px;
+}@keyframes mu{
+    0%{
+        padding-top: 70px;
+    }
+    50%{
+        padding-top: 10px;
+    }
+    100%{
+        padding-top: 70px;
+    }
+}
+.w2{
+    width: 20px;
+    height: 10px;
+    animation: mu2 2s linear infinite;
+    background: rgb(122,7, 250);
+    border-radius:50px;
+    }@keyframes mu2{
+    0%{
+        padding-top: 70px;
+    }
+    50%{
+        padding-top: 10px;
+    }
+    100%{
+        padding-top: 70px;
+    }
+}
+.w3{
+    width: 20px;
+    height: 10px;
+    animation: mu3 3s linear infinite;
+    background: rgb(122,7, 250);
+    border-radius:50px;
+}@keyframes mu3{
+    0%{
+        padding-top: 70px;
+    }
+    50%{
+        padding-top: 10px;
+    }
+    100%{
+        padding-top: 70px;
+    }
+}
+.w4{
+    width: 20px;
+    height: 10px;
+    animation: mu4 2s linear infinite;
+    background: rgb(122,7, 250);
+    border-radius:50px;
+}@keyframes mu4{
+    0%{
+        padding-top: 70px;
+    }
+    50%{
+        padding-top: 10px;
+    }
+    100%{
+        padding-top: 70px;
+    }
+}
+.w5{
+    width: 20px;
+    height: 10px;
+    animation: mu5 1s linear infinite;
+    background: rgb(122,7, 250);
+    border-radius:50px;
+}@keyframes mu5{
+    0%{
+        padding-top: 70px;
+    }
+    50%{
+        padding-top: 10px;
+    }
+    100%{
+        padding-top: 70px;
+    }
+}
+
+
+.audio{
+    position: absolute;
+    margin-top: -100px;
+    width: max-content;
+}
+audio{
+    border: rgba(120, 7, 250, 0.393) solid 2px;
+    padding: 10px;
+    padding-top: 200px;
+    border-radius: 10px;
+}
+.name{
+    margin-top: 350px;
+    width: max-content;
+    height: min-content;
+    font-family: monospace;
+    font-size: 20px;
+    font-weight: 500;
+}
+.name p{
+    text-decoration: underline;
+    color:rgb(122,7, 250); ;
+}
+.name p:hover::after{
+    content: 'تراحمي ياقلوب';
+    width: 150px;
+    height: 30px;
+    background: rgba(120, 7, 250, 0.393);
+    border-radius: 10px;
+    position: absolute;
+    display: block;
+    margin-left: -10px;
+    margin-top: 22px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-family: andalus;
+}
+.name p:hover::before{
+    content: "";
+    position: absolute;
+    border-width: 0px 15px 20px 15px;
+    border-color: rgba(120, 7, 250, 0.393) transparent;
+    border-style: solid;
+    margin-top: 26px;
+    margin-left: 50px;
+}
+
+
+@media screen and (max-width: 300px) {
+    .audio{
+        margin-top: -180px;
+    }
+    audio{
+        border: rgba(120, 7, 250, 0.393) solid 2px;
+        padding: 0px;
+        padding-top: 150px;
+    }
+    .logoMusic{
+        margin-top: -250px;
+    }span{
+        margin: 5px;
+        width: 10px;
+        height: 10px;
+    }
+    .name{
+        margin-top: 250px;
+    }
+    .name p:hover::before{
+        margin-top: 23.5px;
+    }
+    .name p:hover::after{
+        margin-left: -10px;
+    }
+}
